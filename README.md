@@ -185,13 +185,12 @@ To set up Triggers for this solution:
 
  
 
-Step 3: Adobe I/O Runtime
-The Adobe I/O Runtime is a serverless platform that allows you to quickly deploy custom code to respond to events, execute functions right in the cloud, all with no server set-up.
+### <a name="Set-up-Runtime">Set Up Adobe I/O Runtime</a>
 
-For our demo we will be deploying a script for handling Triggers I/O Events and updating the visitor profile in Customer Attributes via Target Profile APIs.
+To set up Runtime:
 
-
-
+Use the following script to handle Triggers I/O Events and to update the visitor profile in Customer Attributes via the Target Profile APIs.
+```
 var request = require('request');
  
 function main(args) {
@@ -241,23 +240,26 @@ function main(args) {
     }
  
 }
+```
 
+To use the script:
 
+Execute the following commands to deploy the webhook.js and create a web action.
 
-Execute below commands to deploy the webhook.js and create a web action.
-
-
+```
 wsk action create aam webhook.js
+```
  
+```
 wsk action update aam --web raw
+```
 
 
+After successful execution of these commands, the web action is accessible at the following location:
 
-After successful execution of the above commands, the web action is accessible in WWW at below location.
-
-
+```
 https://runtime-preview.adobe.io/api/v1/web/<your_openwhisk_namespace>/default/aam
-
+```
 
 
 Step 4: Adobe I/O Events
