@@ -320,6 +320,7 @@ To set up Audience Manager:
 
 1. Create a new **Trait** with the **Expression Builder**, as shown:
 
+   ![expression builder](https://user-images.githubusercontent.com/29133525/34685986-670e4190-f467-11e7-83be-223c0f8a9858.png)
 
 
 
