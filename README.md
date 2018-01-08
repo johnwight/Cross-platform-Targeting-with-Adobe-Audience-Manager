@@ -311,6 +311,7 @@ To set up Audience Manager:
 
 1. In Audience Manager, click **Manage Data**.
 
+   ![manage data](https://user-images.githubusercontent.com/29133525/34685969-4a38be56-f467-11e7-825b-ea138ea1b0ee.png)
 
 
 1. Click **Traits**.
