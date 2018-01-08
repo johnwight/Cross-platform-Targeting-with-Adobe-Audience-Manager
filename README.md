@@ -144,8 +144,8 @@ s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
 
 15. The last step in the workflow is to select **Build and Publish to Production** on the drop down arrow under **Approved**.
 
-    ![build and publish to production](https://git.corp.adobe.com/storage/user/17975/files/ab991a46-cba5-11e7-8ba8-8e0aeef7d267)
-
+   ![build and publish to production](https://user-images.githubusercontent.com/29133525/34682768-1f317504-f45d-11e7-819c-d29787ed322d.png)
+   
 Step 2: Analytics Triggers
 Triggers is a Marketing Cloud Activation core service that enable marketers to identify, define, and monitor key consumer behaviors, and then generate cross-solution communication to re-engage visitors. You can use triggers in real-time decisions and personalization.
 
