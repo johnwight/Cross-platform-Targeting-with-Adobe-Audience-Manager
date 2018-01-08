@@ -178,7 +178,7 @@ To set up Triggers for this solution:
 
    1. Click **Add New** and then select the **Status** checkbox. Select **Enabled** from the drop-down menu and then click **Save**.
 
-      ![status enabled](https://user-images.githubusercontent.com/29133525/34684167-75d9a9b8-f461-11e7-8a70-5f317b803dfd.png)
+      ![status enabled](https://user-images.githubusercontent.com/29133525/34684251-bbfa042e-f461-11e7-9d19-8828414e9f8d.png)
 
 
    1. Add as many conversion variables as you need. It may take some time for them to appear on the Trigger dimensions screen.
