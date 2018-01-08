@@ -60,7 +60,7 @@ To set up Launch:
 
 1. On www.launch.adobe.com, click **New Property**.
 
-   ![create new property](https://git.corp.adobe.com/storage/user/17975/files/bb800320-ca38-11e7-808b-ffc08a67d354)
+   ![create new property](https://user-images.githubusercontent.com/29133525/34681760-13437952-f45a-11e7-898c-1561265c27b7.png)
 
 1. On the **Create Property** box, provide the details for the new property and click **Save.**
 
