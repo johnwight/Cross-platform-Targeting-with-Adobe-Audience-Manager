@@ -80,11 +80,13 @@ To set up Launch:
 
    ![edit rule](https://user-images.githubusercontent.com/29133525/34681953-a1b34b40-f45a-11e7-920a-352ac58f3696.png)
 
+1. Similarly, create an **Analytics** rule with the following specifications:
 
+   ![analytics rule](https://git.corp.adobe.com/storage/user/17975/files/c69616a2-ca3b-11e7-94ff-d246d370669a)
 
-In the "Adobe Analytics-Set Variables" action, go to the bottom of the page and add custom script in </> Open Editor as below:
+1. For the **Adobe Analytics - Set Variables** action, click the **</> Open Editor** button at the bottom of the page and add the following custom script:
 
-````
+```
 var cart=ContextHub.getItem("cart");
 var profile=ContextHub.getItem("profile");
  
@@ -107,7 +109,7 @@ s.eVar5=items.join("|");
 s.eVar6=links.join("|");
 s.eVar7=thumbs.join("|");
 s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
-````
+```
 
 
 Go to "Environments" and create Dev, Stage and Production environment.
