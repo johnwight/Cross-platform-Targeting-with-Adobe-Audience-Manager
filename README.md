@@ -406,7 +406,7 @@ To watch the solution work, you can test the cart abandonment scenario:
 
 1. Enter details on the **ORDER** form and then click **CONTINUE**.
 
-    ![checkout form](https://git.corp.adobe.com/storage/user/17975/files/39d9de92-cbcb-11e7-91f7-574e6b9d761e)
+   ![checkout form](https://user-images.githubusercontent.com/29133525/34689987-aded8adc-f474-11e7-836c-cb64db0e2ae4.png)
 
 1. Close the browser tab to simulate the cart abandonment scenario.
 
