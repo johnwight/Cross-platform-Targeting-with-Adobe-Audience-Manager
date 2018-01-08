@@ -156,33 +156,30 @@ To set up Triggers for this solution:
 
 1. Create a cart abandonment Triggers rule.
 
-    ![cart abandonment rule](https://git.corp.adobe.com/storage/user/17975/files/ee625cf4-cbad-11e7-9f05-c2abb539bb46)
+     ![cart abandonment rule](https://user-images.githubusercontent.com/29133525/34683199-87de61b0-f45e-11e7-976c-85cb99484ffa.png)
 
 1. Add the following dimensions:
 
+* Custom eVar 3
+* Custom eVar 4
+* Custom eVar 5
+* Custom eVar 6
+* Custom eVar 7
+* Custom eVar 8
 
+1. To enable these dimensions in your report suite:
 
-Add below dimensions with Trigger.
-Dimensions
- 
-Custom eVar 3
-Custom eVar 4
-Custom eVar 5
-Custom eVar 6
-Custom eVar 7
-Custom eVar 8
-Page URL
-Note: To enables these dimensions in your report suite go to Adobe Analytics->Admin→Report Suites and follow below steps.
+   On Analytics **Admin** screen, click **Report Suites**.
 
-i) Select a report suite then click on Edit Settings->Conversion→Conversion Variables
+   1. Select a report suite and then click **Edit Settings** > **Conversion** > **Conversion Variables**.
 
 
 
-ii) Click on Add New→check the status check box and select "Enabled" from the drop down menu. Click Save.
+   1. Click **Add New** and then select the **Status** checkbox. Select **Enabled** from the drop-down menu and click **Save**.
 
 
 
-iii) Add as many conversion variables you need, it may take some time to show up in the Trigger dimensions UI.
+   1. Add as many conversion variables as you need. It may take some time for them to appear on the Trigger dimensions screen.
 
  
 
