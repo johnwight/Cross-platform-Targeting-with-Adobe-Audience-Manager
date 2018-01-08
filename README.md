@@ -138,7 +138,7 @@ s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
 
 13. Approve and publish the library by selecting the appropriate option under the drop down arrow for each phase of the build workflow (**Submitted** and **Approved**).
 
-    ![full flow](https://git.corp.adobe.com/storage/user/17975/files/2770abb0-cba7-11e7-8c79-aaf0c67d7aeb)
+   ![full flow](https://user-images.githubusercontent.com/29133525/34682729-038d0f8e-f45d-11e7-927b-b730a66a802d.png)
 
 14. Repeat this process for the **Stage** and **Production** environments as well.
 
