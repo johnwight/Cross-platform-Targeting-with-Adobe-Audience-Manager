@@ -78,62 +78,13 @@ To set up Launch:
 
 1. Click the **Rules** tab and create a **Target** rule with the following specifications:
 
-   ![edit rule](https://git.corp.adobe.com/storage/user/17975/files/503df470-ca3b-11e7-9c2c-c22fff582ed2)
-
-
-
-
-
-
-
-
-
-Go to launch.adobe.com
-Create new "Property"
-
-
-
-Enter "Property" details
-
-
-
-Go to Extensions→Catalog and install below extensions
-
-
-
-Go to Rules and create a "Target" rule defined as below.
-
-
-
-Create an Analytics rule defined as below.
+   ![edit rule](https://user-images.githubusercontent.com/29133525/34681953-a1b34b40-f45a-11e7-920a-352ac58f3696.png)
 
 
 
 In the "Adobe Analytics-Set Variables" action, go to the bottom of the page and add custom script in </> Open Editor as below:
 
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
+````
 var cart=ContextHub.getItem("cart");
 var profile=ContextHub.getItem("profile");
  
@@ -156,7 +107,7 @@ s.eVar5=items.join("|");
 s.eVar6=links.join("|");
 s.eVar7=thumbs.join("|");
 s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
-
+````
 
 
 Go to "Environments" and create Dev, Stage and Production environment.
