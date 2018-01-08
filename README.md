@@ -369,12 +369,12 @@ To set up Target:
 
    ![container](https://user-images.githubusercontent.com/29133525/34688820-9d3c2210-f470-11e7-9983-8f1ee5c5adb7.png)
 
-1. On the text editor, click the **HTML** button, paste the following HTML and click **Save** and then click **Next**.
+1. On the text editor, click the **HTML** button, paste the following HTML and click **Save**.
 
 
    ![best coat and jackets for you](https://user-images.githubusercontent.com/29133525/34688762-7089b494-f470-11e7-86d7-d10dab3a371f.png)
 
-10. Click **Next** and then click **Change Audience**. Select the audience created in Step 4 (Trigger Audience).
+10. Click **Next** and then click **Change Audience**.
 
     ![change audience](https://git.corp.adobe.com/storage/user/17975/files/f488f2d0-cbc8-11e7-9328-56ffcab6ed98)
 
