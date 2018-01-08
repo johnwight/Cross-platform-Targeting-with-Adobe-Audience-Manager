@@ -388,12 +388,80 @@ To set up Target:
 
 1. On the **Activity Setting**, update your **Goal Metrics**.
 
+   ![activity settings](https://user-images.githubusercontent.com/29133525/34689441-c421cf40-f472-11e7-98bb-9cc8581345de.png)
 
-
-Click Save & Close.
+1. Click **Save & Close**.
+ 
+ 
+ 
  
 
-Step 7: Let's Test 
+## <a name="Watch-It-Work">Watch the Solution Work</a> 
+
+To watch the solution work, you can test the cart abandonment scenario:
+
+1. At http://localhost:4502/content/we-retail/us/en/products/men.html, click on a product you want to test.
+
+1. Select a **Color** and **Size**, then click the **ADD TO CART** button and **Checkout**.
+
+1. Enter details on the **ORDER** form and then click **CONTINUE**.
+
+    ![checkout form](https://git.corp.adobe.com/storage/user/17975/files/39d9de92-cbcb-11e7-91f7-574e6b9d761e)
+
+1. Close the browser tab to simulate the cart abandonment scenario.
+
+1. On the Triggers UI page, watch for your specified trigger event to appear.
+
+    ![triggers page](https://git.corp.adobe.com/storage/user/17975/files/58f8fcf8-cbcc-11e7-94ee-9969089f71d2)
+
+1. On the Command Line Interface (CLI) enter the following commands:
+
+   ```
+   wsk activation list runtime
+   ```
+
+   ![runtime commands](https://git.corp.adobe.com/storage/user/17975/files/2d8f882a-cbd1-11e7-8b38-043f4d9d8b6e)
+
+
+7. Select and copy the first activation listed and paste it into the following command:
+
+   ```
+   wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
+   ```
+
+8. Verify that the API call to update the visitor profile has successfully executed. You can check the batch status by using the URL shown in the response > result > \<batchStatus\> tag: 
+
+   http://mboxedge28.tt.omtrdc.net/m2/adobeiosolutions/profile/batchStatus?batchId=adobeiosolutions-1508968014477-39630647.
+
+    ![trigger response](https://git.corp.adobe.com/storage/user/17975/files/558307c8-cbd4-11e7-8313-5fef81880061)
+
+
+9. View the [**Products** site page](http://localhost:4502/content/we-retail/us/en/products/men.html) to see the custom UI element you created.
+
+    ![response custom ui element on page](https://git.corp.adobe.com/storage/user/17975/files/37c59ac4-cbd5-11e7-8145-5fce5f658c2e)
+
+10. To inspect the element, right-click on the page and select **Inspect**.
+
+    ![inspect element](https://git.corp.adobe.com/storage/user/17975/files/250c4e98-cbd8-11e7-8cc5-a07cefd93571)
+
+
+11. Click the **Network** tab. Reload the page and filter for **target**.
+
+    ![network tab on debugger](https://git.corp.adobe.com/storage/user/17975/files/93cd5e46-cbd6-11e7-831c-aef972c87af6)
+
+
+12. You can explore the element to verify and debug the target action.
+
+    ![debug target action](https://git.corp.adobe.com/storage/user/17975/files/43045928-cbd7-11e7-9e88-158c3e60c7d2)
+
+## Feedback?
+
+Please help make this solution as useful as possible. If you find a problem in the documentation or have a suggestion, click the **Issues** tab on this GiHhub repository and then click the **New issue** button. Provide a title and description for your comment and then click the **Submit new issue** button.
+
+   ![submit new issue](https://user-images.githubusercontent.com/29133525/32515298-f344bd5a-c3bc-11e7-9978-34516f964f9f.png)
+
+
+
 Execute below steps to test and debug the solution.
 
 Go to http://localhost:4502/content/we-retail/us/en/products/men.html
