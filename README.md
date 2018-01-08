@@ -25,6 +25,9 @@ An anonymous user visits a retail website. The user visits the product page, sel
 
 ### <a name="Solution-Architecture">Solution Architecture</a>
 
+![aam architecture](https://user-images.githubusercontent.com/29133525/34681317-c1c44bca-f458-11e7-9dcc-6b5a45e27a9f.png)
+
+
 
 ### <a name="Obtain-Product-Authorization">Product Authorization</a>
 
