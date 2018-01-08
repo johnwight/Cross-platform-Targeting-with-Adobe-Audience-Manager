@@ -347,7 +347,7 @@ To set up Target:
 
 1. Click **Launch** on the Target product card.
 
-    ![target card launch](https://git.corp.adobe.com/storage/user/17975/files/5478be94-cbbc-11e7-8abd-728d5bc66818)
+   ![target card launch](https://user-images.githubusercontent.com/29133525/34688275-d21fade6-f46e-11e7-8aa1-cd1d8fd080ce.png)
     
 
 
@@ -356,7 +356,7 @@ To set up Target:
    ![create activity](https://user-images.githubusercontent.com/29133525/34688008-e76a2830-f46d-11e7-91c7-4a34c5bed95b.png)
 
 
-1. On the **Create Experience Targeting Activity** screen, provide the target page URL.
+1. On the **Create Experience Targeting Activity** form, provide the target page URL.
 
 
 
