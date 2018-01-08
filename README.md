@@ -146,12 +146,19 @@ s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
 
       ![build and publish to production](https://user-images.githubusercontent.com/29133525/34682768-1f317504-f45d-11e7-819c-d29787ed322d.png)
    
-Step 2: Analytics Triggers
-Triggers is a Marketing Cloud Activation core service that enable marketers to identify, define, and monitor key consumer behaviors, and then generate cross-solution communication to re-engage visitors. You can use triggers in real-time decisions and personalization.
+### <a name="Set-Up-Analytics-Triggers">Set Up Analytics Triggers</a>
 
-New to Triggers? Before we proceed, We recommend you to read: Step by step guide for Analytics Triggers#Step5:Analytics/TriggersSetup
+Triggers is a Marketing Cloud Activation core service that enables marketers to identify, define, and monitor key consumer behaviors, and then generate cross-solution communication to re-engage visitors. You can use triggers in real-time decisions and personalization.
 
-Create a simple cart abandonment Trigger rule as shown below.
+For instructions on setting up Analytics Triggers, see [Specifying a New Trigger](https://github.com/adobeio/analytics-triggers-documentation#Specify-a-New-Trigger).
+
+To set up Triggers for this solution:
+
+1. Create a cart abandonment Triggers rule.
+
+    ![cart abandonment rule](https://git.corp.adobe.com/storage/user/17975/files/ee625cf4-cbad-11e7-9f05-c2abb539bb46)
+
+1. Add the following dimensions:
 
 
 
