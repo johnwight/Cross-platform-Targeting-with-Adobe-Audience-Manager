@@ -160,12 +160,12 @@ To set up Triggers for this solution:
 
 1. Add the following dimensions:
 
-* Custom eVar 3
-* Custom eVar 4
-* Custom eVar 5
-* Custom eVar 6
-* Custom eVar 7
-* Custom eVar 8
+   * Custom eVar 3
+   * Custom eVar 4
+   * Custom eVar 5
+   * Custom eVar 6
+   * Custom eVar 7
+   * Custom eVar 8
 
 1. To enable these dimensions in your report suite:
 
