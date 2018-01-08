@@ -74,7 +74,7 @@ To set up Launch:
    * Core
    * Experience Cloud ID Service
    
-   ![extensions](https://git.corp.adobe.com/storage/user/17975/files/7821f064-ca3a-11e7-83dd-855fbb4481c6)
+   ![extensions](https://user-images.githubusercontent.com/29133525/34681903-83087260-f45a-11e7-9f10-a9b39123e28b.png)
 
 1. Click the **Rules** tab and create a **Target** rule with the following specifications:
 
