@@ -1,52 +1,94 @@
-# Cross-platform-targeting-with-Adobe-Audience-Manager
+# Cross-Platform Targeting with Adobe Audience Manager
 Integrate Adobe Audience Manager with Adobe I/O for Cross-Platform Targeting
 
+These instructions describe how to to implement cross-platform targeting solutions with Adobe Experience Cloud and Adobe I/O products integration. The solution uses below Adobe products:
+
+
+1. [Introduction](#Introduction)
+
+1. [Set Up Products](#Set-Up-Products)
+
+1. [Watch the Solution Work](#Watch-It-Work)
+
+## <a name="Introduction">Introduction</a>
+
+1. [User Story](#User-Story)
+
+1. [Solution Architecture](#Solution-Architecture)
+
+1. [Product Authorization](#Obtain-Product-Authorization)
+
+### <a name="User Story">User Story</a>
+
+An anonymous user visits a retail website. The user visits the product page, selects a color and size of the product and adds the product into the cart. The user proceeds to checkout but before completing the transaction, leaves the website, abandoning the cart. The cart abandonment activity is captured in Adobe Audience Manager segment and the user profile is served on multiple platforms to create personalized experiences.
+
+
+### <a name="Solution-Architecture">Solution Architecture</a>
+
+
+### <a name="Obtain-Product-Authorization">Product Authorization</a>
+
+To complete this solution, you will need authorization to use the following services:
+
+* Adobe Launch
+* Adobe Analytics/Triggers
+* Adobe I/O Events
+* Adobe I/O Runtime
+* Adobe Audience Manager APIs
+* Adobe audience Manager
+* Adobe Target-Experience Targeting
+
+
+## <a name="Set-Up-Products">Set Up Products</a>
+
+To set up Adobe products for this solution:
+
+1. [Set Up Adobe Launch](#Set-up-Launch)
+
+1. [Set Up Analytics Triggers](#Set-up-Triggers)
+
+1. [Set Up Adobe I/O Runtime](#Set-up-Runtime)
+
+1. [Set Up Adobe I/O Events](#Set-up-Events)
+
+1. [Set Up Adobe Audience Manager](#Set-up-AAM)
+
+1. [Set Up Adobe Target](#Set-up-Target)
+
+
+### <a name="Set-up-Launch">Set Up Adobe Launch</a>
+
+To set up Launch:
+
+1. On www.launch.adobe.com, click **New Property**.
+
+   ![create new property](https://git.corp.adobe.com/storage/user/17975/files/bb800320-ca38-11e7-808b-ffc08a67d354)
+
+1. On the **Create Property** box, provide the details for the new property and click **Save.**
+
+   ![create property box details](https://git.corp.adobe.com/storage/user/17975/files/a5069cf2-ca39-11e7-94eb-5109a8f010f3)
+
+1. Click the **Extensions** tab and install the following extensions
+
+   * Target
+   * Analytics
+   * ContextHub
+   * Core
+   * Experience Cloud ID Service
+   
+   ![extensions](https://git.corp.adobe.com/storage/user/17975/files/7821f064-ca3a-11e7-83dd-855fbb4481c6)
+
+1. Click the **Rules** tab and create a **Target** rule with the following specifications:
+
+   ![edit rule](https://git.corp.adobe.com/storage/user/17975/files/503df470-ca3b-11e7-9c2c-c22fff582ed2)
 
 
 
 
 
 
-Skip to end of metadata
-Created by Hiren Shah, last modified on Dec 04, 2017 Go to start of metadata
-Table of Contents
-Introduction
-Step 1: Adobe Launch
-Step 2: Analytics Triggers
-Dimensions
-Step 3: Adobe I/O Runtime
-Step 4: Adobe I/O Events
-Step 5: Adobe Audience Manager
-Step 6: Adobe Target
-Step 7: Let's Test 
- 
-
-Introduction
-This blog is a step by step guide to implement the cross platform targeting solution using Adobe Experience Cloud and Adobe I/O products integration. The solution uses below Adobe products:
-
-Adobe Launch (The next generation dynamic tag management platform)
-Adobe Analytics/Triggers
-Adobe I/O Events
-Adobe I/O Runtime
-Adobe Audience Manager APIs
-Adobe audience Manager
-Adobe Target-Experience Targeting
 
 
-User Story:
-
-"An anonymous user visits a retail website. The user is interested in buying a product. He/she visits the product page, selects a color and size of the product and adds the product into the cart. The user proceeds for checkout but before completing the transaction, user leaves the website abandoning the cart. The cart abandonment activity is captured in Adobe Audience Manager segment and the user profile is served on multiple platform to create personalized experiences."
-
-
-
-Architecture:
-
-
-
-
-
-Step 1: Adobe Launch
-Adobe Launch is the next generation of Dynamic Tag Management. It provides a platform-based approach to building DTM extensions and a streamlined distribution system to quickly deploy client-side DTM libraries. Custom resources can now be created and reused within DTM to simplify the distribution of client side web applications.
 
 Go to launch.adobe.com
 Create new "Property"
