@@ -187,9 +187,9 @@ To set up Triggers for this solution:
 
 ### <a name="Set-up-Runtime">Set Up Adobe I/O Runtime</a>
 
-To set up Runtime:
+In this solution, you can deploy the following script to handle Triggers I/O Events and to provide updates to the visitor profile in **Customer Attributes** via Target Profile APIs.
 
-Use the following script to handle Triggers I/O Events and to update the visitor profile in Customer Attributes via the Target Profile APIs.
+**webhook.js**
 ```
 var request = require('request');
  
@@ -242,9 +242,7 @@ function main(args) {
 }
 ```
 
-To use the script:
-
-Execute the following commands to deploy the webhook.js and create a web action.
+To deploy the webhook.js and create a web action, enter the following commands:
 
 ```
 wsk action create aam webhook.js
@@ -255,7 +253,7 @@ wsk action update aam --web raw
 ```
 
 
-After successful execution of these commands, the web action is accessible at the following location:
+After entering the commands, the web action is accessible at the following location:
 
 ```
 https://runtime-preview.adobe.io/api/v1/web/<your_openwhisk_namespace>/default/aam
@@ -343,14 +341,17 @@ To set up Audience Manager:
 1. Save the changes.
 
 
-Step 6: Adobe Target
-Adobe Target is a personalization solution that makes it easy to identify your best content through tests that are easy to execute. So you can deliver the right experience to the right customer.
+### <a name="Set-up-Target">Set Up Adobe Target</a>
 
-Go to "Target" and click on Launch.
+To set up Target:
+
+1. Click **Launch** on the Target product card.
+
+    ![target card launch](https://git.corp.adobe.com/storage/user/17975/files/5478be94-cbbc-11e7-8abd-728d5bc66818)
+    
 
 
-
-Go to Activity and click on "Create Activity" and select "Experience Targeting".
+1. On the **Activities** tab, click **Create Activity** and select **Experience Targeting**.
 
 
 
