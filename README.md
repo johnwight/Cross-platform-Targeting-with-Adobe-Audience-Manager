@@ -266,6 +266,49 @@ https://runtime-preview.adobe.io/api/v1/web/<your_openwhisk_namespace>/default/a
 
 To set up Adobe I/O Events:
 
+1. After signing in to the [Adobe I/O Console](https://adobe.io/console), click **New Integration**.
+
+    ![new integration button](https://user-images.githubusercontent.com/29133525/30292388-2ccdd986-96f3-11e7-93bd-93f74bb4e3a4.png)
+
+2. Select **Receive real-time events** and click **Continue**.
+
+    ![real time events](https://user-images.githubusercontent.com/29133525/30292486-946dc812-96f3-11e7-9bc5-2aa0196f704b.png)
+
+
+3. Select **Analytics Triggers** as an event provider and click **Continue**.
+
+    ![create io trigger](https://user-images.githubusercontent.com/29133525/30292595-064305ec-96f4-11e7-9e60-3ee811c7949a.png)
+
+4. Click **Continue** to move on to the next page without making any changes.
+
+5. Provide the **Name** and **Description** for your integration.
+
+    ![name integration box](https://user-images.githubusercontent.com/29133525/30292714-6d00a8ac-96f4-11e7-8449-f93bb2fccfcb.png)
+
+6. Generate a public certificate. To do this:
+
+    1. Open a terminal and execute the following command:
+
+        ```
+        openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout private.key -out certificate_pub.crt
+        ```
+    2. Upload the public certificate by clicking the **Select a File** link and then by selecting the certificate from your computer:
+
+        ![public certificate](https://user-images.githubusercontent.com/29133525/32476036-2e563e40-c332-11e7-9fbd-889f1ba8054f.png)
+
+7. On the **Webhook Details** form, add details, including your web action URL for I/O Events integration webhook. This is where Triggers messages will be delivered by I/O Events. Click **Save**.
+
+    ![webhook details](https://git.corp.adobe.com/storage/user/17975/files/9a71d8be-cbc0-11e7-9fc2-9bea77be5847)
+
+    For more information on creating and registering webhooks, see [Introduction to Webhooks](https://github.com/adobeio/adobeio-events-documentation/blob/master/Webhook_docs_intro.md).
+
+
+
+
+
+
+
+
 1. Create an integration on the Adobe I/O Console.
 
 1. Provide your web action URL for the I/O Events integration webhook. This is where Trigger messages will be delivered by I/O Events.
