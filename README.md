@@ -374,29 +374,19 @@ To set up Target:
 
    ![best coat and jackets for you](https://user-images.githubusercontent.com/29133525/34688762-7089b494-f470-11e7-86d7-d10dab3a371f.png)
 
-10. Click **Next** and then click **Change Audience**.
+1. Click **Next** and then click **Change Audience**.
 
    ![change audience](https://user-images.githubusercontent.com/29133525/34689000-43b8698c-f471-11e7-87b1-f81a8e33c0e9.png)
 
 
-11. On the **Activity Settings**, specify your **Objective**, **Priority**, **Duration**, and **Primary Goal**.
 
-    ![activity settings](https://git.corp.adobe.com/storage/user/17975/files/96bc6c8a-cbc9-11e7-976b-c3cc08e80846)
+1. On the **Choose Audience** screen, select the **Trigger-segment** audience by **aam-integration-user**. This is the same segment that we created in Adobe Audience Manager.
 
-12. Click **Save & Close**.
+*Note: If this segment doesn't appear in your target then please make sure that "Shared Audiences" is [enabled for your organization] (https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)*.
 
- 
+   ![trigger segment audience](https://user-images.githubusercontent.com/29133525/34689121-a6a31146-f471-11e7-8c22-206f3543925f.png)
 
-Click on "Change Audience".
-
-
-
-Select the "Trigger-segment" audience by aam-integration-user, this is the same segment that we created in Adobe Audience Manager.
-Note: If this segment doesn't appear in your target then please make sure that "Shared Audiences" is enabled for your organization. Please visit https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES
-
-
-
-Update the activity settings as per your goals.
+1. On the **Activity Setting**, update your **Goal Metrics**.
 
 
 
