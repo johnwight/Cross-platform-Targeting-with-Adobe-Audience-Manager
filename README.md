@@ -124,7 +124,7 @@ s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
 
 9. Click **Add New Library** button.
 
-   ![add new library](https://git.corp.adobe.com/storage/user/17975/files/044c20f4-ca41-11e7-8717-c29372c9683e)
+   ![add new library](https://user-images.githubusercontent.com/29133525/34682601-9a4a5860-f45c-11e7-9c40-6c7d89b20b61.png)
    
 10. On the **Create New Library** form, specify a **Name** for the build and then select **Dev (development)** from the **Environment** drop down.
 
