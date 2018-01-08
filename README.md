@@ -353,9 +353,10 @@ To set up Target:
 
 1. On the **Activities** tab, click **Create Activity** and select **Experience Targeting**.
 
+   ![create activity](https://user-images.githubusercontent.com/29133525/34688008-e76a2830-f46d-11e7-91c7-4a34c5bed95b.png)
 
 
-Provide the target page URL.
+1. On the **Create Experience Targeting Activity** screen, provide the target page URL.
 
 
 
