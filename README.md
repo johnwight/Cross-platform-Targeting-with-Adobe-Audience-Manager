@@ -298,22 +298,9 @@ To set up Adobe I/O Events:
 
 7. On the **Webhook Details** form, add details, including your web action URL for I/O Events integration webhook. This is where Triggers messages will be delivered by I/O Events. Click **Save**.
 
-    ![webhook details](https://git.corp.adobe.com/storage/user/17975/files/9a71d8be-cbc0-11e7-9fc2-9bea77be5847)
+   ![webhook details](https://user-images.githubusercontent.com/29133525/34685236-efce0cca-f464-11e7-902a-27e594a82c24.png)
 
     For more information on creating and registering webhooks, see [Introduction to Webhooks](https://github.com/adobeio/adobeio-events-documentation/blob/master/Webhook_docs_intro.md).
-
-
-
-
-
-
-
-
-1. Create an integration on the Adobe I/O Console.
-
-1. Provide your web action URL for the I/O Events integration webhook. This is where Trigger messages will be delivered by I/O Events.
-
- 
 
 
 Step 5: Adobe Audience Manager
