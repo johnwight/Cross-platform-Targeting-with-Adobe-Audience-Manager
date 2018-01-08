@@ -82,7 +82,7 @@ To set up Launch:
 
 1. Similarly, create an **Analytics** rule with the following specifications:
 
-   ![analytics rule](https://git.corp.adobe.com/storage/user/17975/files/c69616a2-ca3b-11e7-94ff-d246d370669a)
+   ![analytics rule](https://user-images.githubusercontent.com/29133525/34682376-038da364-f45c-11e7-959b-413760b2c451.png)
 
 1. For the **Adobe Analytics - Set Variables** action, click the **</> Open Editor** button at the bottom of the page and add the following custom script:
 
@@ -112,30 +112,39 @@ s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
 ```
 
 
-Go to "Environments" and create Dev, Stage and Production environment.
+7. Click the **Environments** tab and create the following environments:
 
+   * Dev
+   * Stage
+   * Production
 
+   ![create environments](https://git.corp.adobe.com/storage/user/17975/files/ee621fc4-ca3f-11e7-82af-09d4e9afab44)
 
+8. Save the rule and then click the **Publishing** tab.
 
-Save Rule and go to "Publishing", Click on "Add New Library".
+9. Click **Add New Library** button.
 
+   ![add new library](https://git.corp.adobe.com/storage/user/17975/files/044c20f4-ca41-11e7-8717-c29372c9683e)
+   
+10. On the **Create New Library** form, specify a **Name** for the build and then select **Dev (development)** from the **Environment** drop down.
 
+11. Click the **Add All Changed Resources** button. 
+   
+    ![specify build](https://git.corp.adobe.com/storage/user/17975/files/6399305a-ca42-11e7-8472-7f9dce021645)
+   
+12. Under **Development**, select **Build for Development** in the library drop down.
+   
+    ![build for dev](https://git.corp.adobe.com/storage/user/17975/files/3d7369b2-cb97-11e7-967c-6d53e37db24e)
 
+13. Approve and publish the library by selecting the appropriate option under the drop down arrow for each phase of the build workflow (**Submitted** and **Approved**).
 
-Give name for the build, select Dev (Development) environment and then click "Add all changed resources".
+    ![full flow](https://git.corp.adobe.com/storage/user/17975/files/2770abb0-cba7-11e7-8c79-aaf0c67d7aeb)
 
+14. Repeat this process for the **Stage** and **Production** environments as well.
 
+15. The last step in the workflow is to select **Build and Publish to Production** on the drop down arrow under **Approved**.
 
-
-Build for development and staging and approve for production.
-
-
-
-
-
-
-
-
+    ![build and publish to production](https://git.corp.adobe.com/storage/user/17975/files/ab991a46-cba5-11e7-8ba8-8e0aeef7d267)
 
 Step 2: Analytics Triggers
 Triggers is a Marketing Cloud Activation core service that enable marketers to identify, define, and monitor key consumer behaviors, and then generate cross-solution communication to re-engage visitors. You can use triggers in real-time decisions and personalization.
@@ -176,56 +185,7 @@ The Adobe I/O Runtime is a serverless platform that allows you to quickly deploy
 For our demo we will be deploying a script for handling Triggers I/O Events and updating the visitor profile in Customer Attributes via Target Profile APIs.
 
 
-webhook.js
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
+
 var request = require('request');
  
 function main(args) {
