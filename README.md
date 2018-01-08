@@ -134,7 +134,7 @@ s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
    
 12. Under **Development**, select **Build for Development** in the library drop down.
    
-    ![build for dev](https://git.corp.adobe.com/storage/user/17975/files/3d7369b2-cb97-11e7-967c-6d53e37db24e)
+   ![build for dev](https://user-images.githubusercontent.com/29133525/34682676-d8ac25c0-f45c-11e7-9987-2f79149b56fa.png)
 
 13. Approve and publish the library by selecting the appropriate option under the drop down arrow for each phase of the build workflow (**Submitted** and **Approved**).
 
