@@ -262,12 +262,13 @@ https://runtime-preview.adobe.io/api/v1/web/<your_openwhisk_namespace>/default/a
 ```
 
 
-Step 4: Adobe I/O Events
-With Adobe I/O Events, you can code event-driven experiences, applications, and custom workflows that leverage and combine the Adobe Experience Cloud, Creative Cloud, and Document Cloud.
+### <a name="Set-up-Events">Set Up Adobe I/O Events</a>
 
-New to I/O Events? Before we proceed, We recommend you to read: Step by step guide for Analytics Triggers#Step6:AdobeI/OConsoleIntegration
+To set up Adobe I/O Events:
 
-Provide your web action URL for I/O Events integration webhook, this is where Trigger messages will be delivered by I/O Events.
+1. Create an integration on the Adobe I/O Console.
+
+1. Provide your web action URL for the I/O Events integration webhook. This is where Trigger messages will be delivered by I/O Events.
 
  
 
