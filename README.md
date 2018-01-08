@@ -376,7 +376,7 @@ To set up Target:
 
 10. Click **Next** and then click **Change Audience**.
 
-    ![change audience](https://git.corp.adobe.com/storage/user/17975/files/f488f2d0-cbc8-11e7-9328-56ffcab6ed98)
+   ![change audience](https://user-images.githubusercontent.com/29133525/34689000-43b8698c-f471-11e7-87b1-f81a8e33c0e9.png)
 
 
 11. On the **Activity Settings**, specify your **Objective**, **Priority**, **Duration**, and **Primary Goal**.
