@@ -316,6 +316,8 @@ To set up Audience Manager:
 
 1. Click **Traits**.
 
+   ![traits](https://user-images.githubusercontent.com/29133525/34686031-8b31008a-f467-11e7-819e-587f67d9a769.png)
+
 
 
 1. Create a new **Trait** with the **Expression Builder**, as shown:
