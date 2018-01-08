@@ -307,17 +307,17 @@ To set up Adobe I/O Events:
 
 Adobe Audience Manager is a data management platform (DMP) that helps you build unique audience profiles so you can identify your most valuable segments and use them across any digital channel.
 
-Go to Adobe Audience Manager.
+To set up Audience Manager:
 
-Click on "Manage Data" on the left panel.
-
-
-
-Click on Traits.
+1. In Audience Manager, click **Manage Data**.
 
 
 
-Create a new "Trait" with below expression.
+1. Click **Traits**.
+
+
+
+1. Create a new **Trait** with the **Expression Builder**, as shown:
 
 
 
