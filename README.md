@@ -372,7 +372,7 @@ To set up Target:
 1. On the text editor, click the **HTML** button, paste the following HTML and click **Save** and then click **Next**.
 
 
-   ![text editor](https://git.corp.adobe.com/storage/user/17975/files/ec55c044-cbc7-11e7-9c19-209ccbbc9c73)
+   ![best coat and jackets for you](https://user-images.githubusercontent.com/29133525/34688762-7089b494-f470-11e7-86d7-d10dab3a371f.png)
 
 10. Click **Next** and then click **Change Audience**. Select the audience created in Step 4 (Trigger Audience).
 
