@@ -33,7 +33,7 @@ To complete this solution, you will need authorization to use the following serv
 * Adobe I/O Events
 * Adobe I/O Runtime
 * Adobe Audience Manager APIs
-* Adobe audience Manager
+* Adobe Audience Manager
 * Adobe Target-Experience Targeting
 
 
@@ -49,7 +49,7 @@ To set up Adobe products for this solution:
 
 1. [Set Up Adobe I/O Events](#Set-up-Events)
 
-1. [Set Up Adobe Audience Manager](#Set-up-AAM)
+1. [Set Up Adobe Audience Manager](#Set-up-AM)
 
 1. [Set Up Adobe Target](#Set-up-Target)
 
@@ -303,8 +303,9 @@ To set up Adobe I/O Events:
     For more information on creating and registering webhooks, see [Introduction to Webhooks](https://github.com/adobeio/adobeio-events-documentation/blob/master/Webhook_docs_intro.md).
 
 
-Step 5: Adobe Audience Manager
-It’s a data management platform (DMP) that helps you build unique audience profiles so you can identify your most valuable segments and use them across any digital channel.
+### <a name="Set-up-AM">Set Up Adobe Audience Manager</a>
+
+Adobe Audience Manager is a data management platform (DMP) that helps you build unique audience profiles so you can identify your most valuable segments and use them across any digital channel.
 
 Go to Adobe Audience Manager.
 
