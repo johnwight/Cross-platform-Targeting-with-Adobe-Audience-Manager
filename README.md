@@ -423,36 +423,15 @@ To watch the solution work, you can test the cart abandonment scenario:
    ![runtime commands](https://git.corp.adobe.com/storage/user/17975/files/2d8f882a-cbd1-11e7-8b38-043f4d9d8b6e)
 
 
-7. Select and copy the first activation listed and paste it into the following command:
+1. Select and copy the first activation listed and paste it into the following command:
 
    ```
    wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
    ```
 
-8. Verify that the API call to update the visitor profile has successfully executed. You can check the batch status by using the URL shown in the response > result > \<batchStatus\> tag: 
+1. View the [**Products** site page](http://localhost:4502/content/we-retail/us/en/products/men.html) to see the custom UI element you created.
 
-   http://mboxedge28.tt.omtrdc.net/m2/adobeiosolutions/profile/batchStatus?batchId=adobeiosolutions-1508968014477-39630647.
-
-    ![trigger response](https://git.corp.adobe.com/storage/user/17975/files/558307c8-cbd4-11e7-8313-5fef81880061)
-
-
-9. View the [**Products** site page](http://localhost:4502/content/we-retail/us/en/products/men.html) to see the custom UI element you created.
-
-    ![response custom ui element on page](https://git.corp.adobe.com/storage/user/17975/files/37c59ac4-cbd5-11e7-8145-5fce5f658c2e)
-
-10. To inspect the element, right-click on the page and select **Inspect**.
-
-    ![inspect element](https://git.corp.adobe.com/storage/user/17975/files/250c4e98-cbd8-11e7-8cc5-a07cefd93571)
-
-
-11. Click the **Network** tab. Reload the page and filter for **target**.
-
-    ![network tab on debugger](https://git.corp.adobe.com/storage/user/17975/files/93cd5e46-cbd6-11e7-831c-aef972c87af6)
-
-
-12. You can explore the element to verify and debug the target action.
-
-    ![debug target action](https://git.corp.adobe.com/storage/user/17975/files/43045928-cbd7-11e7-9e88-158c3e60c7d2)
+   ![best coat message in ui](https://user-images.githubusercontent.com/29133525/34689847-32b35e8c-f474-11e7-971b-a4d23009f103.png)
 
 ## Feedback?
 
@@ -460,48 +439,6 @@ Please help make this solution as useful as possible. If you find a problem in t
 
    ![submit new issue](https://user-images.githubusercontent.com/29133525/32515298-f344bd5a-c3bc-11e7-9978-34516f964f9f.png)
 
-
-
-Execute below steps to test and debug the solution.
-
-Go to http://localhost:4502/content/we-retail/us/en/products/men.html
-Click on any product you like.
-
-
-
-Select a Color and Size and click on "ADD TO CART".
-
-
-
-Click on Checkout.
-
-
-
-Enter details and click continue.
-
-
-
-Close the tab to initiate the cart abandonment scenario.
-
-Go to Triggers UI page, wait for your trigger event to surface.
-
-
-
-Go to Command Line Interface (CLI) and execute below commands.
-
-wsk activation list runtime
-
-
-
-Select the top most activation and execute below command.
-
-wsk activation get f6f5ae1dcb3d4292991d63f22283fb94
-
-
-
-
-
-Go to http://localhost:4502/content/we-retail/us/en/products/men.html again and you should see custom elements on the page.
 
 
 
