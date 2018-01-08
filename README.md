@@ -12,24 +12,19 @@ These instructions describe how to to implement cross-platform targeting solutio
 
 ## <a name="Introduction">Introduction</a>
 
-1. [User Story](#User-Story)
 
-1. [Solution Architecture](#Solution-Architecture)
-
-1. [Product Authorization](#Obtain-Product-Authorization)
-
-### <a name="User Story">User Story</a>
+###Solution Use Case
 
 An anonymous user visits a retail website. The user visits the product page, selects a color and size of the product and adds the product into the cart. The user proceeds to checkout but before completing the transaction, leaves the website, abandoning the cart. The cart abandonment activity is captured in Adobe Audience Manager segment and the user profile is served on multiple platforms to create personalized experiences.
 
 
-### <a name="Solution-Architecture">Solution Architecture</a>
+###Solution Architecture
+
+The following diagram shows the architecture for this solution:
 
 ![aam architecture](https://user-images.githubusercontent.com/29133525/34681317-c1c44bca-f458-11e7-9dcc-6b5a45e27a9f.png)
 
-
-
-### <a name="Obtain-Product-Authorization">Product Authorization</a>
+###What's Needed
 
 To complete this solution, you will need authorization to use the following services:
 
