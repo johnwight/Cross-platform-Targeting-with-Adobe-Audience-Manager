@@ -358,16 +358,32 @@ To set up Target:
 
 1. On the **Create Experience Targeting Activity** form, provide the target page URL.
 
+   ![targeting activity](https://user-images.githubusercontent.com/29133525/34688397-3a28006e-f46f-11e7-8299-e99b4b8cacbc.png)
 
 
-Select an empty container and click on "Edit Text/HTML", we will be using this space to add custom UI elements for the user.
+1. On the **Create Experience Targeting Activity** form, provide the Target page URL.
+
+    ![targeting activity](https://git.corp.adobe.com/storage/user/17975/files/51e83034-cbc5-11e7-9966-db80874656a6)
+
+1. Open the text editor to add a custom UI element for the user on the site. To do this, select an empty container and click **Edit Text/HTML**.
+
+    ![container](https://git.corp.adobe.com/storage/user/17975/files/72178278-cbc6-11e7-8d11-b68437a3ae57)
+
+1. On the text editor, click the **HTML** button, paste the following HTML and click **Save** and then click **Next**.
 
 
+   ![text editor](https://git.corp.adobe.com/storage/user/17975/files/ec55c044-cbc7-11e7-9c19-209ccbbc9c73)
 
-Click on HTML button and paste below HTML code. Save and click Next.
+10. Click **Next** and then click **Change Audience**. Select the audience created in Step 4 (Trigger Audience).
+
+    ![change audience](https://git.corp.adobe.com/storage/user/17975/files/f488f2d0-cbc8-11e7-9328-56ffcab6ed98)
 
 
+11. On the **Activity Settings**, specify your **Objective**, **Priority**, **Duration**, and **Primary Goal**.
 
+    ![activity settings](https://git.corp.adobe.com/storage/user/17975/files/96bc6c8a-cbc9-11e7-976b-c3cc08e80846)
+
+12. Click **Save & Close**.
 
  
 
