@@ -324,9 +324,10 @@ To set up Audience Manager:
 
    ![expression builder](https://user-images.githubusercontent.com/29133525/34685986-670e4190-f467-11e7-83be-223c0f8a9858.png)
 
+   ![expression built](https://user-images.githubusercontent.com/29133525/34686086-bf416ed2-f467-11e7-992c-3c43288473d2.png)
 
 
-Click on "Segments" and create a new "Segment" as below. Make sure you choose the correct report suite. Select the trait created in the above step.
+1. Click **Segments** and create a new **Segment** as shown below. Make sure you choose the correct report suite. Select the trait that you created in the previous step.
 
 
 
