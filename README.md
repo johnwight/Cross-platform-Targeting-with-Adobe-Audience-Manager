@@ -118,7 +118,7 @@ s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
    * Stage
    * Production
 
-   ![create environments](https://git.corp.adobe.com/storage/user/17975/files/ee621fc4-ca3f-11e7-82af-09d4e9afab44)
+      ![create environments](https://user-images.githubusercontent.com/29133525/34682566-7aee09b2-f45c-11e7-937a-0c5aadb0aef8.png)
 
 8. Save the rule and then click the **Publishing** tab.
 
