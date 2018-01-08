@@ -329,9 +329,10 @@ To set up Audience Manager:
 
 1. Click **Segments** and create a new **Segment** as shown below. Make sure you choose the correct report suite. Select the trait that you created in the previous step.
 
+   ![trigger segment](https://user-images.githubusercontent.com/29133525/34686347-7c194fca-f468-11e7-96ff-b0ca4d314e97.png)
 
 
-Click on "Destinations" and create a new "destination" as below. Choose "Browser" platform and add the segment created in the above step in segment mapping.
+Click "Destinations" and create a new "destination" as below. Choose "Browser" platform and add the segment created in the above step in segment mapping.
 
 
 
