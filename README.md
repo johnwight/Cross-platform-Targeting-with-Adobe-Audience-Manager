@@ -332,11 +332,15 @@ To set up Audience Manager:
    ![trigger segment](https://user-images.githubusercontent.com/29133525/34686347-7c194fca-f468-11e7-96ff-b0ca4d314e97.png)
 
 
-Click "Destinations" and create a new "destination" as below. Choose "Browser" platform and add the segment created in the above step in segment mapping.
+1. Click **Destinations** and create a new destination as shown below.
 
+   ![destinations](https://user-images.githubusercontent.com/29133525/34686733-bb9907b6-f469-11e7-8818-0412b4627bff.png)
 
+1. Choose the **Browser** platform. 
 
-Save the changes.
+1. Add the segment created in the previous step in segment mapping.
+
+1. Save the changes.
 
 
 Step 6: Adobe Target
