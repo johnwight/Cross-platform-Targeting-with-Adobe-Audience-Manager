@@ -172,7 +172,8 @@ To set up Triggers for this solution:
    On Analytics **Admin** screen, click **Report Suites**.
 
    1. Select a report suite and then click **Edit Settings** > **Conversion** > **Conversion Variables**.
-
+   
+   ![conversion variables](https://user-images.githubusercontent.com/29133525/34684000-f458eb2e-f460-11e7-9660-b7422735772c.png)
 
 
    1. Click **Add New** and then select the **Status** checkbox. Select **Enabled** from the drop-down menu and click **Save**.
