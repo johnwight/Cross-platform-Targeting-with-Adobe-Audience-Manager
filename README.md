@@ -191,10 +191,7 @@ In this solution, you can deploy the following script to handle Triggers I/O Eve
 
 **webhook.js**
 ```
-var request = require('request');
- 
 function main(args) {
- 
     var method = args.__ow_method;
  
     if (method == "get") {
@@ -205,40 +202,69 @@ function main(args) {
         else
             console.log("no challenge");
  
-        return {body: challenge}
+        return {
+            body: challenge
+        }
     }
  
     if (method == "post") {
-        try {
-            var body = new Buffer(args.__ow_body, 'base64');
-            var jSon = JSON.parse(body);
-            var mcId = jSon.trigger.mcId;
-            var index = jSon.trigger.enrichments.analyticsHitSummary.dimensions.eVar5.data.length - 1;
-            var pcId = jSon.trigger.enrichments.analyticsHitSummary.dimensions.eVar3.data[index];
-            var trPrices = jSon.trigger.enrichments.analyticsHitSummary.dimensions.eVar4.data[index];
-            var trProducts = jSon.trigger.enrichments.analyticsHitSummary.dimensions.eVar5.data[index];
-            var trLink = jSon.trigger.enrichments.analyticsHitSummary.dimensions.eVar6.data[index];
-            var trThumb = jSon.trigger.enrichments.analyticsHitSummary.dimensions.eVar7.data[index];
-            var dcs_region = jSon.trigger.enrichments.analyticsHitSummary.dimensions.eVar8.data[index];
+        var body = new Buffer(args.__ow_body, 'base64');
+        var jSon = JSON.parse(body);
+        var mcId = jSon.event["com.adobe.mcloud.pipeline.pipelineMessage"]["com.adobe.mcloud.protocol.trigger"].mcId;
+        var index = jSon.event["com.adobe.mcloud.pipeline.pipelineMessage"]["com.adobe.mcloud.protocol.trigger"].enrichments.analyticsHitSummary.dimensions.eVar5.data.length - 1;
+        var pcId = jSon.event["com.adobe.mcloud.pipeline.pipelineMessage"]["com.adobe.mcloud.protocol.trigger"].enrichments.analyticsHitSummary.dimensions.eVar3.data[index];
+        var trPrices = jSon.event["com.adobe.mcloud.pipeline.pipelineMessage"]["com.adobe.mcloud.protocol.trigger"].enrichments.analyticsHitSummary.dimensions.eVar4.data[index].split("|")[0];
+        var trProducts = jSon.event["com.adobe.mcloud.pipeline.pipelineMessage"]["com.adobe.mcloud.protocol.trigger"].enrichments.analyticsHitSummary.dimensions.eVar5.data[index].split("|")[0];
+        var trLink = jSon.event["com.adobe.mcloud.pipeline.pipelineMessage"]["com.adobe.mcloud.protocol.trigger"].enrichments.analyticsHitSummary.dimensions.eVar6.data[index].split("|")[0];
+        var trThumb = jSon.event["com.adobe.mcloud.pipeline.pipelineMessage"]["com.adobe.mcloud.protocol.trigger"].enrichments.analyticsHitSummary.dimensions.eVar7.data[index].split("|")[0];
+        var trOffer = "5";
+        var trCoupon = "ADBETGT5OFF";
  
- 
-            var url = 'http://adobeiosolutionsdemo.demdex.net/event?trProducts=' + trProducts + '&trPrices=' + trPrices + '&d_mid=' + mcId + '&d_orgid=<your_org_id>@AdobeOrg&d_rtbd=json&d_jsonv=1&dcs_region=' + dcs_region;
-            console.log("Calling AAM API with:" + url);
-            return new Promise(function(resolve, reject) {
-                request.get(url, function(error, response, body) {
-                    if (error) {
-                        reject(error);
-                    } else {
-                        resolve({body: response});
-                    }
-                });
-            });
-        } catch (e) {
-            console.log("Error occured while calling the API", e);
+        //Additional 5% off, if product price is more than $100
+        if (trPrices > 100) {
+            trOffer = "10";
+            trCoupon = "ADBETGT10OFF";
         }
  
-    }
+        console.log("webhook invoked with: " + body);
  
+        var fs = require('fs');
+        var request = require('request');
+        var file = pcId + ".txt";
+        var content = "batch=pcId,mcId,trProducts,trPrices,trLink,trThumb,trOffer,trCoupon\n"
+                       + pcId + "," + mcId + "," + trProducts + "," + trPrices + "," + trLink + "," + trThumb + "," + trOffer + "," + trCoupon;
+ 
+        return new Promise(function(resolve, reject) {
+            try {
+                fs.writeFileSync(file, content);
+            } catch (e) {
+                console.log("Cannot write file ", e);
+            }
+ 
+            try {
+                var data = fs.readFileSync(file);
+                console.log("Sending:" + data);
+            } catch (e) {
+                console.log("Cannot read file ", e);
+            }
+ 
+            var options = {
+                url: 'http://<your_client_id>.tt.omtrdc.net/m2/<your_client_id>/v2/profile/batchUpdate',
+                headers: {
+                    "content-type": "application/x-www-form-urlencoded",
+                    "Authorization": "Bearer <target_authorization_code>"
+                }
+            }
+            fs.createReadStream(file, {encoding: 'utf-8'}).pipe(request.post(options, function(err, message, res) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve({body: res});
+                }
+            }));
+ 
+        });
+    }
 }
 ```
 
