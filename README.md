@@ -428,8 +428,10 @@ To watch the solution work, you can test the cart abandonment scenario:
 
    ![best coat message in ui](https://user-images.githubusercontent.com/29133525/34689847-32b35e8c-f474-11e7-971b-a4d23009f103.png)
 
-## Author
+## Authors
 - Hiren Shah [@hirenshah111](https://github.com/hirenshah111).
+- John Wight [@hjohnwight](https://github.com/johnwight).
+
 
 ## Feedback?
 
