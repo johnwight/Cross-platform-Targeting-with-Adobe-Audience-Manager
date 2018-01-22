@@ -430,7 +430,7 @@ To watch the solution work, you can test the cart abandonment scenario:
 
 ## Authors
 - Hiren Shah [@hirenshah111](https://github.com/hirenshah111).
-- John Wight [@hjohnwight](https://github.com/johnwight).
+- John Wight [@johnwight](https://github.com/johnwight).
 
 
 ## Feedback?
