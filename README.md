@@ -92,22 +92,16 @@ var profile=ContextHub.getItem("profile");
  
 var price=[];
 var items=[];
-var links=[];
-var thumbs=[];
-var origin=window.location.origin;
+ 
 for(i=0;i<cart.entries.length;i++)
 {
      price[i]=cart.entries[i].price;
      items[i]=cart.entries[i].title;
-     links[i]=origin+cart.entries[i].page;
-     thumbs[i]=origin+cart.entries[i].thumbnail;
 }
  
-s.eVar3=document.cookie.split("PC#")[1].split("#")[0];
 s.eVar4=price.join("|");
 s.eVar5=items.join("|");
-s.eVar6=links.join("|");
-s.eVar7=thumbs.join("|");
+ 
 s.eVar8=_satellite.getVisitorId().getAudienceManagerLocationHint();
 ```
 
