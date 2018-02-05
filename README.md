@@ -1,7 +1,7 @@
 # Cross-Platform Targeting with Adobe Audience Manager
 Integrate Adobe Audience Manager with Adobe I/O for Cross-Platform Targeting
 
-These instructions describe how to to implement cross-platform targeting solutions with Adobe Experience Cloud and Adobe I/O products integration. The solution uses the following Adobe products:
+These instructions describe how to to implement cross-platform targeting solutions with Adobe Experience Cloud and Adobe I/O products integration. 
 
 
 1. [Introduction](#Introduction)
